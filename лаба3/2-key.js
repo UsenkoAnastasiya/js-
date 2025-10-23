@@ -1,9 +1,11 @@
 'use strict';
 const characters = "absdfjkdvoeifnsklckdk";
 const generateKey = (length, possible) => {
-  // Generate string of random characters
-  // Use Math.random() and Math.floor()
-  // See documentation at MD
+  let key = ' ';
+  for(let i=0;i< length;i++){
+   const  index=Math.floor(Math.random()*base);
+      key+= posible[index];
+  }
   return key;
 };
 
